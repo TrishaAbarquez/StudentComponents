@@ -6,7 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./input-students.component.css']
 })
 export class InputStudentsComponent implements OnInit {
-
+  StudNo;
+  StudFname;
+  StudLname;
+  StudProg;
+  StudYr;
   constructor() { }
 
   ngOnInit() {
