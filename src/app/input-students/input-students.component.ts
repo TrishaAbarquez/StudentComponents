@@ -6,11 +6,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./input-students.component.css']
 })
 export class InputStudentsComponent implements OnInit {
-  StudNo;
-  StudFname;
-  StudLname;
-  StudProg;
-  StudYr;
+   studNo: number;
+  studFname: string;
+  studLname: string;
+  studProg: string;
+  studYr: number;
+  studentRecord: object;
+  addStudentEntry(){
+    this.studentRecord = {
+          studNumber: this.studNo,
+          studFirstName: this.studFname,
+          studLastName: this.studLname,
+          studProgram: this.studProg,
+          studYear: this.studYr
+        };
+return this.studentRecord;
+
+}
   constructor() { }
 
   ngOnInit() {
